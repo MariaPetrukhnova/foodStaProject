@@ -1,0 +1,53 @@
+.btn-look {
+    min-width: 106px;
+    padding: 10px 22px;
+    border-radius: 30px;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 1.5;
+    color: var(--main-text);
+}
+
+.small-btn {
+    padding: 6px 18px;
+    border: none;
+    background: var(--btn-green);
+
+    &:hover, &:focus, &:active {
+        background: var(--btn-hover);
+    }
+}
+
+.big-btn--white-order {
+    background: var(--white-bcg);
+    border: 2px solid var(--accent-color);
+
+    &:hover, &:focus, &:active {
+        border-color: var(--darkgreen-hover);
+    }
+}
+
+.big-btn--white-subscribe {
+    background: var(--white-bcg);
+    border: 1px solid var(--accent-color);
+
+    &:hover, &:focus, &:active {
+        background-color: var(--yellow-main);
+    }
+}
+
+.big-btn--green-subscribe {
+    border: none;
+    background: var(--btn-green);
+    
+    &:hover, &:focus, &:active {
+        background: var(--btn-hover);
+    }
+}
+
+.big-btn--send {
+    background: var(--white-bcg);
+    border: 2px solid var(--accent-color);
+}
+
+//Add 'if else' conditions for big-btn--send

@@ -1,0 +1,9 @@
+.logo-link {
+    display: block;
+    @extend %link;
+}
+
+.logo-svg {
+    width: 66px;
+    height: 52px;
+}

@@ -206,7 +206,7 @@ button,
 [type="button"],
 [type="reset"],
 [type="submit"] {
-    -webkit-appearance: button;
+    --webkit-appearance: button;
 }
 
 /**
@@ -306,7 +306,7 @@ textarea {
    */
 
 [type="search"] {
-    -webkit-appearance: textfield;
+    --webkit-appearance: textfield;
     /* 1 */
     outline-offset: -2px;
     /* 2 */
@@ -317,7 +317,7 @@ textarea {
    */
 
 [type="search"]::-webkit-search-decoration {
-    -webkit-appearance: none;
+    --webkit-appearance: none;
 }
 
 /**
@@ -326,7 +326,7 @@ textarea {
    */
 
 ::-webkit-file-upload-button {
-    -webkit-appearance: button;
+    --webkit-appearance: button;
     /* 1 */
     font: inherit;
     /* 2 */

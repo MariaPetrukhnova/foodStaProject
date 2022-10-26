@@ -1,0 +1,50 @@
+.page-header {
+
+    &__container {
+        padding: 10px 20px;
+        @include flexed(center, space-between);
+    }
+
+    &__nav {
+        margin-right: 30px;
+    }
+
+    &__nav-list {
+        @extend %list;
+        // width: 100%;
+
+        @media screen and (min-width: 768px) {
+            @include flexed(center, flex-start);
+        }
+    }
+
+    &__nav-item {
+        @media screen and (min-width: 768px) {
+            & + & {
+                margin-left: 28px;
+            }
+        }  
+    }
+
+    &__nav-link {
+        padding: 16px;
+        width: 100%;
+        @extend %link;
+        color: var(--nav-text);
+
+        &:hover, &:focus, &:active {
+            background-color: var(--btn-green);
+        }
+
+        @media screen and (min-width: 768px) {
+            font-size: 14px;
+            padding: 16px 0;
+
+            &:hover, &:focus, &:active {
+                color: var(--btn-hover);
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
