@@ -7,8 +7,8 @@
     @include flexed(center, center);
 
     @media screen and (min-width: 768px) {
-            display: none;
-        }
+        display: none;
+    }
 }
 
 .menu-close {
@@ -47,7 +47,8 @@
 }
 
 .menu-container {
-    position: relative;
+    // position: relative;
+
     @media screen and (max-width: 767px) {
         display: none;
         position: absolute;
@@ -57,16 +58,20 @@
         &.is-open {
             position: absolute;
             top: 50px;
-            left: calc(100% - 170px);
+            left: calc(100% - 150px);
             display: block;
             background-color: var(--main-bcg);
             box-shadow: 0px 4px 24px rgba(105, 105, 105, 0.1);
             border-radius: 30px 0px 30px 30px;
+            overflow: hidden;
 
-            .page-header__btn {
-                visibility: hidden;
+            @media screen and (min-width: 480px) {
+                right: 20px;
             }
 
+            .page-header__btn {
+                display: none;
+            }
             .page-header__nav-link {
                 width: 130px;
             }
