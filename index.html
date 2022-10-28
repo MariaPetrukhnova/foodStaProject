@@ -34,7 +34,7 @@
                         <li class="page-header__nav-item nav-item"><a href="" class="page-header__nav-link nav-link">Contact</a></li>
                     </ul>
                 </nav>
-                <button type="button" class="menu-close">
+                <button type="button" class="menu-close" data-close-menu-button>
                     <svg class="cross-thumb">
                         <use href="./images/bcg&psevdoelements/symbol-defs.svg#cross" class="icon-cross"></use>
                     </svg>
@@ -46,35 +46,49 @@
     <main>
         <section class="hero">
             <div class="hero__container container">
-                <h1 class="hero__title">Enjoy Your Favorite Food From Anywhere</h1>
-                <p class="hero__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis
-                cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.</p>
-                <button type="button" class="hero__btn btn-look small-btn">Order now</button>
+                <div class="hero__content">
+                    <h1 class="hero__title">Enjoy Your Favorite Food From Anywhere</h1>
+                    <p class="hero__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis
+                    cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.</p>
+                    <button type="button" class="hero__btn btn-look small-btn">Order now</button>
+                </div>
                 <div class="hero__slider">
                     <div class="hero__slider-item"><img src="" alt="" class="hero__slider-img"></div>
                     <div class="hero__slider-item"><img src="" alt="" class="hero__slider-img"></div>
                     <div class="hero__slider-item"><img src="" alt="" class="hero__slider-img"></div>
+                    <button class="hero__arrow-btn left-arrow" type="button">
+                        <svg class="hero__arrow-svg">
+                            <use class="hero__arrow-icon" href="./images/bcg&psevdoelements/symbol-defs.svg#left-arrow"></use>
+                        </svg>
+                    </button>
+                    <button class="hero__arrow-btn right-arrow" type="button">
+                        <svg class="hero__arrow-svg">
+                            <use class="hero__arrow-icon" href="./images/bcg&psevdoelements/symbol-defs.svg#right-arrow"></use>
+                        </svg>
+                    </button>
                 </div>
             </div>
         </section>
         <section class="offerings">
             <div class="offerings__container container">
                 <img src="" alt="" class="offerings__image">
-                <h2 class="offerings__title">What’s Special offerings Our Offerings</h2>
-                <p class="offerings__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis
-                cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.</p>
-                <ul class="offerings__services-list">
-                    <li class="offerings__services-item">
-                        <h3 class="offerings__services-title">Fastest Delivery</h3>
-                        <p class="offerings__services-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
-                    </li>
-                    <li class="offerings__services-item">
-                        <h3 class="offerings__services-title">Easy To Order</h3>
-                        <p class="offerings__services-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
-                    </li>
-                    </ul>
-                <button type="button" class="offerings__btn btn-look big-btn--white-order">Order now</button>
-                <a class="offerings__more-link" href="">Read more</a>
+                <div class="offerings__content">
+                    <h2 class="offerings__title">What’s Special offerings Our Offerings</h2>
+                    <p class="offerings__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis
+                    cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.</p>
+                    <ul class="offerings__services-list">
+                        <li class="offerings__services-item">
+                            <h3 class="offerings__services-title">Fastest Delivery</h3>
+                            <p class="offerings__services-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
+                        </li>
+                        <li class="offerings__services-item">
+                            <h3 class="offerings__services-title">Easy To Order</h3>
+                            <p class="offerings__services-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
+                        </li>
+                        </ul>
+                    <button type="button" class="offerings__btn btn-look big-btn--white-order">Order now</button>
+                    <a class="offerings__more-link" href="">Read more</a>
+                </div>
             </div>
         </section>
         <section class="favorites">
